@@ -3,18 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="index.css">
     <title>Survey Form</title>
 </head>
 <body>
-    <h1 id="title">freeCodeCamp Survey Form</h1>
-    <p id="description">Thank you for taking the time to help us improve the platform</p>
+    <h1 id="title" class="text-center">freeCodeCamp Survey Form</h1>
+    <p id="description" class="text-center">Thank you for taking the time to help us improve the platform</p>
     <form action="#" id="survey-form">
         <label for="name" id="name-label">Name</label>
         <input type="text" id="name" name="name" placeholder="Enter your name" required>
 
         <label for="email" id="email-label">Email</label>
-        <input type="email" name="email" id="email" required>
+        <input type="email" name="email" id="email" placeholder="Enter your email">
 
         <label for="number" id="number-label">Age (optional)</label>
         <input type="number" name="number" id="number" placeholder="Age" min="10" max="99">
@@ -79,10 +82,10 @@
         <input type="checkbox" name="additional-courses" id="additional-courses" value="additional-courses">
         <label for="additional-courses" id="additional-courses-label">Additional Courses</label>
 
-        <p id="textarea-label">Any comments or suggestions?</p>
+        <label for="suggestions" id="textarea-label">Any comments or suggestions?</label> 
         <textarea name="suggestions" id="suggestions" cols="30" rows="10" placeholder="Enter your comment here..."></textarea>
 
-        <button id="submit">Submit</button>
+        <button id="submit" type="submit">Submit</button>
 
     </form>
 </body>
