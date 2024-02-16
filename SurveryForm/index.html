@@ -17,9 +17,9 @@
         <input type="email" name="email" id="email" required>
 
         <label for="number" id="number-label">Age (optional)</label>
-        <input type="number" name="number" id="number" placeholder="Age">
+        <input type="number" name="number" id="number" placeholder="Age" min="10" max="99">
 
-        <label for="dropdown" id="dropdown-lable">Which option best describes your current role?</label>
+        <label for="dropdown" id="dropdown-label">Which option best describes your current role?</label>
         <select name="dropdown" id="dropdown" required>
             <option value="#" selected>Select current role</option>
             <option value="student">Student</option>
@@ -29,9 +29,61 @@
             <option value="other">Other</option>
         </select>
 
+        <p id="recommendation-label">Would you recommend freeCodeCamp to a friend?</p>
+        <input type="radio" name="recommendation" id="radio-definitely" value="deninitely" checked>
+        <label for="radio-definitely" id="definitely-label">Definitely</label>
+
+        <input type="radio" name="recommendation" id="radio-maybe" value="maybe">
+        <label for="radio-maybe" id="maybe-label">Maybe</label>
+
+        <input type="radio" name="recommendation" id="radio-not-sure" value="not-sure">
+        <label for="radio-not-sure" id="not-sure-label">Not sure</label>
+
+        <label for="feature-dropdown" id="feature-label">What is your favorite feature of freeCodeCamp?</label>
+        <select name="feature-dropdown" id="feature-dropdown" required>
+            <option value="#" selected>Select an option</option>
+            <option value="challenges">Challenges</option>
+            <option value="projects">Projects</option>
+            <option value="community">Community</option>
+            <option value="open-source">Open source</option>
+        </select>
+
+        <p>What would you like to see improved? (Check all that apply)</p>
+        <input type="checkbox" name="front-end-projects" id="front-end-projects" value="front-end-projects">
+        <label for="front-end-projects" id="front-end-projects-label">Front-end Projects</label>
+
+        <input type="checkbox" name="back-end-projectsdata-visualization" id="back-end-projects" value="back-end-projects">
+        <label for="back-end-projects" id="back-end-projects-label">Back-end Projects</label>
+
+        <input type="checkbox" name="data-visualization" id="data-visualization" value="data-visualization">
+        <label for="data-visualization" id="data-visualization-label">Data Visualization</label>
+
+        <input type="checkbox" name="open-source-community" id="open-source-community" value="open-source-community">
+        <label for="open-source-community" id="open-source-community-label">Open Source Community</label>
+
+        <input type="checkbox" name="better-help-rooms" id="better-help-rooms" value="better-help-rooms">
+        <label for="better-help-rooms" id="better-help-rooms-label">Better help rooms</label>
+
+        <input type="checkbox" name="videos" id="videos" value="videos">
+        <label for="videos" id="videos-label">Videos</label>
+
+        <input type="checkbox" name="city-meetups" id="city-meetups" value="city-meetups">
+        <label for="city-meetups" id="city-meetups-label">City Meetups</label>
+
+        <input type="checkbox" name="wiki" id="wiki" value="wiki">
+        <label for="wiki" id="wiki-label">Wiki</label>
+
+        <input type="checkbox" name="forum" id="forum" value="forum">
+        <label for="forum" id="forum-label">Forum</label>
+
+        <input type="checkbox" name="additional-courses" id="additional-courses" value="additional-courses">
+        <label for="additional-courses" id="additional-courses-label">Additional Courses</label>
+
+        <p id="textarea-label">Any comments or suggestions?</p>
+        <textarea name="suggestions" id="suggestions" cols="30" rows="10" placeholder="Enter your comment here..."></textarea>
+
+        <button id="submit">Submit</button>
+
     </form>
-
-
-    
 </body>
 </html>
